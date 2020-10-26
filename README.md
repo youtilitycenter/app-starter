@@ -14,16 +14,16 @@ Requirements
 Installation
 ------------
 
-Install the [Symfony client][4] binary and run this command:
+Install via vagrant:
 
 ```bash
-$ symfony new --demo my_project
+$ vagrant up
 ```
 
-Alternatively, you can use Composer:
+Log into machine:
 
 ```bash
-$ composer create-project symfony/symfony-demo my_project
+$ vagrant ssh
 ```
 
 Usage
@@ -31,16 +31,7 @@ Usage
 
 There's no need to configure anything to run the application. If you have
 installed the [Symfony client][4] binary, run this command to run the built-in
-web server and access the application in your browser at <http://localhost:8000>:
-
-```bash
-$ cd my_project/
-$ symfony serve
-```
-
-If you don't have the Symfony client installed, run `php bin/console server:run`.
-Alternatively, you can [configure a web server][3] like Nginx or Apache to run
-the application.
+web server and access the application in your browser at <http://192.168.100.100/it>:
 
 Tests
 -----
